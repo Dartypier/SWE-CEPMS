@@ -26,6 +26,5 @@ create table quarantine
     name             varchar not null,
     details          varchar,
     discovered_date  varchar not null,
-    FOREIGN KEY (scan_schedule_id) references scan_schedule ON DELETE set null,
-    FOREIGN KEY (endpoint_id) references endpoint ON DELETE set null
+    FOREIGN KEY (scan_schedule_id) references scan_schedule ON DELETE set null
 );

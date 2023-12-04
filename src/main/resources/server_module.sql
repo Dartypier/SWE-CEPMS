@@ -44,8 +44,7 @@ create table quarantine_file
     name             varchar not null,
     details          varchar,
     discovered_date  varchar not null,
-    foreign key (scan_schedule_id) references scan_schedule on delete set null,
-    foreign key (endpoint_id) references endpoint on delete set null
+    foreign key (scan_schedule_id) references scan_schedule on delete set null
 );
 
 
